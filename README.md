@@ -1,16 +1,16 @@
-# iOS Coding Assignment
+# react native Coding Assignment
 
-This is a coding challenge for iOS developers.  
+This is a coding challenge for react native developers.  
 
 # Prerequisites
-Candidate should have Xcode and Git installed on their machine.
+Candidate should have vscode and Git installed on their machine.
 
 # Step 1
 Fork this repository and clone it.
 
-Create a new iOS Application "Weather App"
- * For the UI, you can use these mechanisms: Storyboards/XIBs, straight code, SwiftUI, or a combination of any.
- * Use the Model-View-ViewModel (MVVM) pattern. Bonus points for also using the Coordinator pattern.
+Create a new react native Application "Weather App"
+ * For the UI, you can use these mechanisms: Tailwind css package.
+ * Use the Model-View-ViewModel (MVVM) or any other pattern. Bonus points for also using the Coordinator pattern.
 
 # Step 2
 

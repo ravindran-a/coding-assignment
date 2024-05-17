@@ -1,48 +1,79 @@
-# react native Coding Assignment
+This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-This is a coding challenge for react native developers.  
+# Getting Started
 
-# Prerequisites
-Candidate should have vscode and Git installed on their machine.
+>**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-# Step 1
-Fork this repository and clone it.
+## Step 1: Start the Metro Server
 
-Create a new react native Application "Weather App"
- * For the UI, you can use these mechanisms: Tailwind css package.
- * Use the Model-View-ViewModel (MVVM) or any other pattern. Bonus points for also using the Coordinator pattern.
+First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 
-# Step 2
+To start Metro, run the following command from the _root_ of your React Native project:
 
-Use the [Open Weather API](https://openweathermap.org/api) to fetch weather details. Here is an example call requesting the hourly temperature and rainfall for the lat/long of New York City, NY.
+```bash
+# using npm
+npm start
 
-`https://api.open-meteo.com/v1/forecast?latitude=40.71&longitude=-74.01&hourly=temperature_2m,rain`
+# OR using Yarn
+yarn start
+```
 
-Please use the latitude and longitude of the following cities to fetch temperature and rainfall conditions every hour of the day. A day is considered to run from 00:00:00 through 23:59:59. Hours should be displayed in the app according to the device's time display option (_Settings->General->Date&Time->24-Hour Time_).
+## Step 2: Start your Application
 
-| City | Lat  | Long |
-| ------- | --- | --- |
-| New York | 40.71 | -74.01 |
-| Dallas | 32.78 | -96.81 |
-| Miami | 25.77 | -80.19 |
+Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-Use the images included in the `assets` folder for a visual indicator of the weather conditions. Any precipitation `>0.0` and `<1.0` should be considered *light rain*. Precipitation `>=1.0` should be considered *heavy rain*. No precipitation is *sunny*.
+### For Android
 
-Here is a rough design for the sample app.
+```bash
+# using npm
+npm run android
 
-![weather app drawio](https://user-images.githubusercontent.com/1957407/206615131-5afcbb18-1d7e-4b38-b9f1-7f4b1333defd.png)
+# OR using Yarn
+yarn android
+```
 
+### For iOS
 
-# Expected funtionality
-1. Fetch the current temperature for the three cities and list their current temperature, along with a rain or sun symbol as appropriate. 
-1. Using the a control at the top of the main screen, switch between Celcius and Farenheit. This control can be any type you choose.
-1. Clicking on a row will display the full weather report of the selected city for each hour of the day
-1. The temperature system selected in view 1 should be carried to view 2.
+```bash
+# using npm
+npm run ios
 
+# OR using Yarn
+yarn ios
+```
 
-# Evaluation
-- Clean, readable code
-- Knowledge of MVVM, delegation, UI and navigation, fetching and parsing JSON data, git.
+If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
-# Acknowledgements
-Weather image assets <a href="http://www.freepik.com">designed by Anindyanfitri / Freepik</a>.
+This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+
+## Step 3: Modifying your App
+
+Now that you have successfully run the app, let's modify it.
+
+1. Open `App.tsx` in your text editor of choice and edit some lines.
+2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+
+   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+
+## Congratulations! :tada:
+
+You've successfully run and modified your React Native App. :partying_face:
+
+### Now what?
+
+- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
+- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+
+# Troubleshooting
+
+If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+
+# Learn More
+
+To learn more about React Native, take a look at the following resources:
+
+- [React Native Website](https://reactnative.dev) - learn more about React Native.
+- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
+- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
+- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
+- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.

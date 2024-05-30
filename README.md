@@ -41,7 +41,7 @@ Here is a rough design for the sample app.
 
 # Evaluation
 - Clean, readable code
-- Knowledge of MVVM, delegation, UI and navigation, fetching and parsing JSON data, git.
+- Knowledge of Typescript/Javascript/React/ReactNative, storage, UI and navigation, fetching and parsing JSON data, git, security, optimization etc.
 
 # Acknowledgements
 Weather image assets <a href="http://www.freepik.com">designed by Anindyanfitri / Freepik</a>.

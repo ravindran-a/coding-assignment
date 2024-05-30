@@ -1,4 +1,4 @@
-# react native Coding Assignment
+# React Native Coding Assignment
 
 This is a coding challenge for react native developers.  
 
@@ -9,8 +9,7 @@ Candidate should have vscode and Git installed on their machine.
 Fork this repository and clone it.
 
 Create a new react native Application "Weather App"
- * For the UI, you can use these mechanisms: Tailwind css package.
- * Use the Model-View-ViewModel (MVVM) or any other pattern. Bonus points for also using the Coordinator pattern.
+ * For the UI, you can use these mechanisms: Tailwind css package and Atomic approach.
 
 # Step 2
 
